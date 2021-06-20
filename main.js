@@ -1,4 +1,4 @@
-﻿// 初始化 Phaser，并创建一个 400x490px 的游戏
+// 初始化 Phaser，并创建一个 400x490px 的游戏
 var game = new Phaser.Game(400, 490, Phaser.AUTO, 'game_div');
 var game_state = {};
 
