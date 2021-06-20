@@ -2,9 +2,6 @@
 var game = new Phaser.Game(400, 490, Phaser.AUTO, 'game_div');
 var game_state = {};
 
-var localStorageName = "crackalien";
-var highScore;
-
 // 创建一个包含游戏的新'main'状态
 game_state.main = function() { };  
 game_state.main.prototype = {
@@ -141,6 +138,42 @@ game_state.main.prototype = {
 
     // 重新开始游戏
     restart_game: function() {
+        switch (parseInt(this.label_score.content/10)) {
+            case 0:
+                alert("才" + this.label_score.content + "秒？");
+                 break;
+            case 1:
+                alert(this.label_score.content + "秒可不太行哦！");
+                 break;
+            case 2:
+                alert(this.label_score.content + "秒勉勉强强哦！");
+                 break;
+            case 3:
+                alert("加把劲儿！" + this.label_score.content + "秒只能算凑活。");
+                 break;
+            case 4:
+                alert("还可以哟！" + this.label_score.content + "秒还行啦。");
+                 break;
+            case 5:
+                alert("不错哟！" + this.label_score.content + "秒快到及格线了！");
+                 break;
+            case 6:
+                alert("大神！" + this.label_score.content + "秒！请收下我的膝盖！");
+                 break;
+            case 7:
+                alert(this.label_score.content + "秒！嗷嗷嗷嗷！");
+                 break;
+            case 8:
+                alert("不得了了！" + this.label_score.content + "秒！夭寿啦！成精啦！");
+                 break;
+            case 9:
+                alert("五体投地！" + this.label_score.content + "秒非人力所能及也！");
+                 break;
+            default:
+                alert("真男人！" + this.label_score.content + "秒大丈夫也！");
+                 break;
+        } 
+        
         this.bgm.stop();
 
         // 移除计时器
