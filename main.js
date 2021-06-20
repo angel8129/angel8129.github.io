@@ -1,4 +1,4 @@
-// 初始化 Phaser，并创建一个 400x490px 的游戏
+﻿// 初始化 Phaser，并创建一个 400x490px 的游戏
 var game = new Phaser.Game(400, 490, Phaser.AUTO, 'game_div');
 var game_state = {};
 
@@ -18,7 +18,7 @@ game_state.main.prototype = {
         this.title = this.game.add.text(80, 20, " 是男人就飞100秒", style2);
 
         // 更改游戏背景颜色
-        //this.game.stage.backgroundColor = '#71c5cf';
+        this.game.stage.backgroundColor = '#71c5cf';
 
         // 加载鸟精灵
         this.game.load.spritesheet('bird', 'assets/bird.png', 34, 24);
