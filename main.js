@@ -26,13 +26,13 @@ game_state.main.prototype = {
         // 加载管道精灵
         this.game.load.image('pipe', 'assets/pipe.png');
 
-        this.game.load.audio('jump', 'assets/fly.wav');
+        this.game.load.audio('jump', 'https://files.catbox.moe/b3eloh.wav');
         
-        this.game.load.audio('hit', 'assets/crash.wav');
+        this.game.load.audio('hit', 'https://files.catbox.moe/jy7cu2.wav');
 
-        this.game.load.audio('coin', 'assets/score.wav');
+        this.game.load.audio('coin', 'https://files.catbox.moe/4pclbb.wav');
 
-        this.game.load.audio('bgm','assets/BGM.m4a');
+        this.game.load.audio('bgm','https://files.catbox.moe/crdocw.m4a');
         this.bgm = this.game.add.audio('bgm',0.8,true);
         this.bgm.play();
     },
